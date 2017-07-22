@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="container"
+         data-ng-init="names=['Gerald Saunders','George Kasper']">
+        <h1>Name:</h1> 
+        <input type="text" ng-model="name" /> {{ name }}
+        <br />
+        <h4>Example Names</h4>
+        <ul>
+            <li data-ng-repeat="personName in names">{{ personName }}</li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+</body>
+</html>
